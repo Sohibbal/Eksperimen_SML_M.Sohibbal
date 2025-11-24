@@ -16,7 +16,7 @@ print(df.head())
 
 # Menentukan kolom numerik dan kategorikal
 numerical_cols = df.select_dtypes(include=['number']).columns
-categorical_cols = df.select_dypes(include=['object']).columns
+categorical_cols = df.select_dtypes(include=['object']).columns
 
 # Menghapus Duplikat
 df_cleaned = df.drop_duplicates()
