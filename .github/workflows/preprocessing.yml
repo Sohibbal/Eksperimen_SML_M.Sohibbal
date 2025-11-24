@@ -1,4 +1,4 @@
-name: Run Preprocessing Automatically
+name: Preprocessing Automatically
 
 on:
   push:
