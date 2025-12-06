@@ -43,4 +43,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: obesity_classification_preprocessed
-          path: preprocessing/obesity_classification_preprocessed.csv
+          path: preprocessing/obesity_classification_preprocessing.csv
