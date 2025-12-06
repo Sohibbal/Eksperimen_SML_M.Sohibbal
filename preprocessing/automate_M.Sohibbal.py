@@ -57,6 +57,6 @@ print(f"Preprocessor (scaler) disimpan di: {preprocessor_path}")
 df_preprocessed = df_cleaned.copy()
 df_preprocessed[numerical_cols] = data_scaled
 
-# Simpan hasil dalam format csv
+# Simpan hasil dalam format csv.
 df_preprocessed.to_csv(output_file, index=False)
 print(f"Hasil preprocessing disimpan di: {output_file}")
