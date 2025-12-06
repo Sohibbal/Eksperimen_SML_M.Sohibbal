@@ -26,6 +26,18 @@ jobs:
       - name: Run preprocessing script
         run: |
           python preprocessing/automate_M.Sohibbal.py
+      
+      - name: Upload encoder
+        uses: actions/upload-artifact@v4
+        with:
+          name: encoder
+          path: preprocessing/label_encoders.pkl
+      
+      - name: Upload preprocessor (scaler)
+        uses: actions/upload-artifact@v4
+        with:
+          name: preprocessor
+          path: preprocessing/preprocessor.pkl
 
       - name: Upload processed dataset
         uses: actions/upload-artifact@v4
